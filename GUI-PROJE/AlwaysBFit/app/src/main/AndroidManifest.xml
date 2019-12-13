@@ -9,11 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ChooseProgramActivity"></activity>
         <activity
             android:name=".Lose_weights_tabbed"
-            android:label="@string/title_activity_lose_weights_tabbed"
             android:exported="true"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:label="@string/title_activity_lose_weights_tabbed"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
