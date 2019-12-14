@@ -25,10 +25,9 @@ public class MainActivity extends AppCompatActivity {
 
         username             = findViewById(R.id.username);
         password             = findViewById(R.id.password);
-        forget_your_password = findViewById(R.id.forgetPassword);
+        forget_your_password = findViewById(R.id.newPassword);
         register             = findViewById(R.id.register);
-
-        login_button         = findViewById(R.id.login_button);
+        login_button         = findViewById(R.id.register_button);
 
         login_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,6 +40,28 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+        forget_your_password.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainActivity.this,NewPasswordActivity.class);
+                startActivity(intent);
+
+
+            }
+        });
+
+        register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainActivity.this,SignUpActivity.class);
+                startActivity(intent);
+
+
+            }
+        });
 
     }
 
