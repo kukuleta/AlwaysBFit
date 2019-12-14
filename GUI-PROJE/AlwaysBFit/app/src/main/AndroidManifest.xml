@@ -15,7 +15,18 @@
             android:exported="true"
             android:label="@string/title_activity_lose_weights_tabbed"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NewPasswordActivity"
+            android:exported="true"
+            android:label="newpassword"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="true"
+            android:label="Register"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".MainActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
