@@ -10,20 +10,17 @@
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="200dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toEndOf="parent"
-        app:srcCompat="@drawable/logo_with_name"
-        tools:layout_editor_absoluteY="0dp" />
+        app:srcCompat="@drawable/logo_with_name" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="0dp"
+        android:layout_width="411dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="92dp"
+        android:layout_marginTop="36dp"
         android:gravity="center"
         android:text="CHOOSE A PROGRAM"
         android:textSize="30dp"
@@ -31,23 +28,25 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <Button
         android:id="@+id/cardio_button"
         android:layout_width="0dp"
-        android:layout_height="100dp"
+        android:layout_height="75dp"
         android:background="@drawable/custom_buton"
         android:text="CARDIO"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gain_muscles_button" />
 
     <Button
         android:id="@+id/gain_muscles_button"
         android:layout_width="0dp"
-        android:layout_height="100dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/custom_buton"
         android:text="GAIN MUSCLES"
         app:layout_constraintEnd_toEndOf="parent"
@@ -58,8 +57,8 @@
     <Button
         android:id="@+id/lose_weights_button"
         android:layout_width="0dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="56dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="24dp"
         android:background="@drawable/custom_buton"
         android:text="Lose Weıghts"
         app:layout_constraintEnd_toEndOf="parent"
@@ -71,13 +70,23 @@
         android:id="@+id/welcoming"
         android:layout_width="0dp"
         android:layout_height="50dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="28dp"
         android:gravity="center"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcoming" />
 </androidx.constraintlayout.widget.ConstraintLayout>
