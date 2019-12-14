@@ -9,13 +9,13 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-public class Tab2Fragment extends Fragment {
-    private static final String TAG = "Tab2Fragment";
+public class LoseWeightsTab1Fragment extends Fragment {
+    private static final String TAG = "LoseWeightsTab1Fragment";
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.tab2_fragment,container,false);
+        View view = inflater.inflate(R.layout.lose_weights_tab1_fragment,container,false);
         return view;
     }
 }

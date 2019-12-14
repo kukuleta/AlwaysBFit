@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient">
+
+    <ScrollView
+        android:id="@+id/loseweights_scroll1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/lose_weights_plank_img"
+                android:layout_width="135dp"
+                android:layout_height="139dp"
+                app:srcCompat="@drawable/plank"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lose_weights_leg_raise_img"/>
+
+            <TextView
+                android:id="@+id/lose_weights_plank_text"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:text="  Plank \n  Dip \n  3 Sets \n  30 Seconds"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#FCE7E7"
+                android:textSize="24sp"
+                app:layout_constraintStart_toEndOf="@id/lose_weights_plank_img"
+                app:layout_constraintTop_toTopOf="@id/lose_weights_plank_img" />
+
+
+            <ImageView
+                android:id="@+id/lose_weights_leg_raise_img"
+                android:layout_width="135dp"
+                android:layout_height="139dp"
+                app:srcCompat="@drawable/leg_raise"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lose_weights_crunch_img"/>
+
+            <TextView
+                android:id="@+id/lose_weights_leg_raise_text"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:text="  Leg Raise \n  Dip \n  3 Sets \n  12 Repeats"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#FCE7E7"
+                android:textSize="24sp"
+                app:layout_constraintStart_toEndOf="@id/lose_weights_leg_raise_img"
+                app:layout_constraintTop_toTopOf="@id/lose_weights_leg_raise_img" />
+
+            <ImageView
+                android:id="@+id/lose_weights_crunch_img"
+                android:layout_width="135dp"
+                android:layout_height="139dp"
+                app:srcCompat="@drawable/crunch"
+                app:layout_constraintTop_toBottomOf="@id/lose_weights_leg_curl_img"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/lose_weights_crunch_text"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:text="  Crunch \n  Dip \n  3 Sets \n  15 Repeats"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#FCE7E7"
+                android:textSize="24sp"
+                app:layout_constraintStart_toEndOf="@id/lose_weights_crunch_img"
+                app:layout_constraintTop_toTopOf="@id/lose_weights_crunch_img" />
+
+
+            <ImageView
+                android:id="@+id/lose_weights_leg_curl_img"
+                android:layout_width="135dp"
+                android:layout_height="139dp"
+                app:srcCompat="@drawable/leg_curl"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lose_weight_leg_extension_img"/>
+
+            <TextView
+                android:id="@+id/lose_weights_leg_curl_text"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:text="  Leg Curl \n  Dip \n  3 Sets \n  12 Repeats"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#FCE7E7"
+                android:textSize="24sp"
+                app:layout_constraintStart_toEndOf="@id/lose_weights_leg_curl_img"
+                app:layout_constraintTop_toTopOf="@id/lose_weights_leg_curl_img" />
+
+
+            <ImageView
+                android:id="@+id/lose_weight_leg_extension_img"
+                android:layout_width="135dp"
+                android:layout_height="139dp"
+                app:srcCompat="@drawable/leg_extension"
+                app:layout_constraintTop_toBottomOf="@id/lose_weights_cable_curl_img"
+                app:layout_constraintStart_toStartOf="parent"/>
+            <TextView
+                android:id="@+id/lose_weights_leg_extension_text"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:text="  Leg Extension \n  Dip \n  3 Sets \n  12 Repeats"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#FCE7E7"
+                android:textSize="24sp"
+                app:layout_constraintStart_toEndOf="@id/lose_weight_leg_extension_img"
+                app:layout_constraintTop_toTopOf="@id/lose_weight_leg_extension_img" />
+
+
+            <ImageView
+                android:id="@+id/lose_weights_cable_curl_img"
+                android:layout_width="135dp"
+                android:layout_height="139dp"
+                app:srcCompat="@drawable/cable_curl"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lose_weights_biceps_curl_img"/>
+
+            <TextView
+                android:id="@+id/lose_weights_cable_curl_text"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:text="  Cable Curl \n  Dip \n  3 Sets \n  12 Repeats"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#FCE7E7"
+                android:textSize="24sp"
+                app:layout_constraintStart_toEndOf="@id/lose_weights_cable_curl_img"
+                app:layout_constraintTop_toTopOf="@id/lose_weights_cable_curl_img" />
+
+            <ImageView
+                android:id="@+id/lose_weights_biceps_curl_img"
+                android:layout_width="135dp"
+                android:layout_height="139dp"
+                app:srcCompat="@drawable/biceps_curl"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lose_weights_deltoid_dumbell_press_img"/>
+            <TextView
+                android:id="@+id/lose_weights_biceps_curl_text"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:text="  Biceps Curl \n  Dip \n  3 Sets \n  12 Repeats"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#FCE7E7"
+                android:textSize="24sp"
+                app:layout_constraintStart_toEndOf="@id/lose_weights_biceps_curl_img"
+                app:layout_constraintTop_toTopOf="@id/lose_weights_biceps_curl_img" />
+
+
+            <ImageView
+                android:id="@+id/lose_weights_deltoid_dumbell_press_img"
+                android:layout_width="135dp"
+                android:layout_height="139dp"
+                app:srcCompat="@drawable/deltoid_dumbell_press"
+                app:layout_constraintTop_toBottomOf="@id/lose_weights_letarel_raises_img"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/lose_weights_deltoid_dumbell_press_text"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:text="  Deltoid Press \n  Dip \n  3 Sets \n  12 Repeats"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#FCE7E7"
+                android:textSize="24sp"
+                app:layout_constraintStart_toEndOf="@id/lose_weights_deltoid_dumbell_press_img"
+                app:layout_constraintTop_toTopOf="@id/lose_weights_deltoid_dumbell_press_img" />
+
+            <ImageView
+                android:id="@+id/lose_weights_letarel_raises_img"
+                android:layout_width="135dp"
+                android:layout_height="139dp"
+                app:srcCompat="@drawable/letarel_raises"
+                app:layout_constraintTop_toBottomOf="@id/lose_weights_weighted_bench_dip_img"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/lose_weights_letarel_raises_text"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:text="  Letarel Raises \n  Dip \n  3 Sets \n  12 Repeats"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#FCE7E7"
+                android:textSize="24sp"
+                app:layout_constraintStart_toEndOf="@id/lose_weights_letarel_raises_img"
+                app:layout_constraintTop_toTopOf="@id/lose_weights_letarel_raises_img" />
+
+            <ImageView
+                android:id="@+id/lose_weights_weighted_bench_dip_img"
+                android:layout_width="135dp"
+                android:layout_height="139dp"
+                app:srcCompat="@drawable/weighted_bench_dip"
+                app:layout_constraintTop_toBottomOf="@id/lose_weights_cable_pushdown_img"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/lose_weights_weighted_bench_dip_text"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:text="  Weighted Bench \n  Dip \n  3 Sets \n  12 Repeats"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#FCE7E7"
+                android:textSize="24sp"
+                app:layout_constraintStart_toEndOf="@id/lose_weights_weighted_bench_dip_img"
+                app:layout_constraintTop_toTopOf="@id/lose_weights_weighted_bench_dip_img" />
+
+            <ImageView
+                android:id="@+id/lose_weights_cable_pushdown_img"
+                android:layout_width="135dp"
+                android:layout_height="139dp"
+                app:srcCompat="@drawable/cable_pushdown"
+                app:layout_constraintTop_toBottomOf="@id/lose_weights_seated_cable_row_img"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/lose_weights_cable_pushdown_text"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:text="  Cable Pushdown \n  3 Sets \n  12 Repeats"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#FCE7E7"
+                android:textSize="24sp"
+                app:layout_constraintStart_toEndOf="@id/lose_weights_cable_pushdown_img"
+                app:layout_constraintTop_toTopOf="@id/lose_weights_cable_pushdown_img" />
+
+            <ImageView
+                android:id="@+id/lose_weights_seated_cable_row_img"
+                android:layout_width="135dp"
+                android:layout_height="139dp"
+                app:srcCompat="@drawable/seated_cable_row"
+                app:layout_constraintTop_toBottomOf="@id/lose_weights_pull_down_img"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/lose_weights_seated_cable_row_text"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:text="  Seated Cable Row \n  3 Sets \n  10 Repeats"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#FCE7E7"
+                android:textSize="24sp"
+                app:layout_constraintStart_toEndOf="@id/lose_weights_seated_cable_row_img"
+                app:layout_constraintTop_toTopOf="@id/lose_weights_seated_cable_row_img" />
+
+            <ImageView
+                android:id="@+id/lose_weights_pull_down_img"
+                android:layout_width="135dp"
+                android:layout_height="139dp"
+                app:srcCompat="@drawable/pull_down"
+                app:layout_constraintTop_toBottomOf="@id/lose_weights_butterfly_img"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/lose_weights_pull_down_text"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:text="  Pull Down \n  3 Sets \n  12 Repeats"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#FCE7E7"
+                android:textSize="24sp"
+                app:layout_constraintStart_toEndOf="@id/lose_weights_pull_down_img"
+                app:layout_constraintTop_toTopOf="@id/lose_weights_pull_down_img" />
+
+            <TextView
+                android:id="@+id/lose_weights_butterfly_text"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:text="  Butterfly \n  3 Sets \n  12 Repeats"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#FCE7E7"
+                android:textSize="24sp"
+                app:layout_constraintStart_toEndOf="@id/lose_weights_butterfly_img"
+                app:layout_constraintTop_toTopOf="@id/lose_weights_butterfly_img" />
+
+            <TextView
+                android:id="@+id/lose_weights_dumbell_press_text"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:text="  Dumbell Press \n  3 Sets \n  12 Repeats"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#FCE7E7"
+                android:textSize="24sp"
+                app:layout_constraintStart_toEndOf="@id/lose_weights_dumbell_press_img"
+                app:layout_constraintTop_toTopOf="@id/lose_weights_dumbell_press_img" />
+
+            <TextView
+                android:id="@+id/lose_weights_running_text"
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:inputType="textMultiLine"
+                android:text="  Cardio \n  5 min"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#FCE7E7"
+                android:textSize="24sp"
+                app:layout_constraintStart_toEndOf="@id/lose_weights_running_img"
+                app:layout_constraintTop_toTopOf="@id/lose_weights_running_img" />
+
+
+            <ImageView
+                android:id="@+id/lose_weights_running_img"
+                android:layout_width="135dp"
+                android:layout_height="139dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/running" />
+
+            <ImageView
+                android:id="@+id/lose_weights_dumbell_press_img"
+                android:layout_width="135dp"
+                android:layout_height="139dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lose_weights_running_img"
+                app:srcCompat="@drawable/dumbell_press" />
+
+            <ImageView
+                android:id="@+id/lose_weights_butterfly_img"
+                android:layout_width="135dp"
+                android:layout_height="139dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lose_weights_dumbell_press_img"
+                app:srcCompat="@drawable/butterfly" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>
