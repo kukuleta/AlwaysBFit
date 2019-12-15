@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
 
                 }
 
-                if(password.length()<8){
+                else if(password.length()<8){
 
                     Toast.makeText(MainActivity.this, "Şifreniz 8 karakter veya üstü olmalı..!", Toast.LENGTH_SHORT).show();
 
