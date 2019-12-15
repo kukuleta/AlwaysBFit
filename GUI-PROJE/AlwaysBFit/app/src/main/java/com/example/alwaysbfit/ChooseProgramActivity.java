@@ -59,6 +59,7 @@ public class ChooseProgramActivity extends AppCompatActivity {
         gain_muscles.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 Intent intent = new Intent(ChooseProgramActivity.this,Gain_muscles_tabbed.class);
                 startActivity(intent);
 
@@ -74,8 +75,6 @@ public class ChooseProgramActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(ChooseProgramActivity.this,Gain_muscles_tabbed.class);
-                startActivity(intent);
 
             }
         });
