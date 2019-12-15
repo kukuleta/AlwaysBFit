@@ -21,6 +21,11 @@
             android:label="newpassword"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
+            android:name=".Gain_muscles_tabbed"
+            android:exported="true"
+            android:label="gainmuscles"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
             android:name=".SignUpActivity"
             android:exported="true"
             android:label="Register"
