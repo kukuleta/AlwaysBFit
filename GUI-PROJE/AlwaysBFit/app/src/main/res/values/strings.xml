@@ -6,4 +6,5 @@
     <string name="title_activity_lose_weights_tabbed">lose_weights_tabbed</string>
     <string name="title_activity_lose_weights_tab1">Lose_weights_tab1</string>
     <string name="title_activity_gain_muscles_tabbed">Gain_muscles_tabbed</string>
+    <string name="title_activity_gain__strength_tabbed">Gain_Strength_tabbed</string>
 </resources>

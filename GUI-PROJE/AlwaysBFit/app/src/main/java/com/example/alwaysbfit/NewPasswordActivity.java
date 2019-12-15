@@ -33,10 +33,10 @@ public class NewPasswordActivity extends AppCompatActivity {
 
     public void find_view_by_id(){
 
-        email_adress      = findViewById(R.id.email);
-        newPassword      = findViewById(R.id.newPassword);
-        newPasswordAgain = findViewById(R.id.new_password_again);
-        done_button      = findViewById(R.id.doneButton);
+        email_adress      =  findViewById(R.id.email);
+        newPassword       =  findViewById(R.id.newPassword);
+        newPasswordAgain  =  findViewById(R.id.new_password_again);
+        done_button       =  findViewById(R.id.doneButton);
 
 
     }
@@ -47,9 +47,9 @@ public class NewPasswordActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                String email     = email_adress.getText().toString();
-                String newpassw    = newPassword.getText().toString();
-                String newpasswagain = newPasswordAgain.getText().toString();
+                String email         =   email_adress.getText().toString();
+                String newpassw      =   newPassword.getText().toString();
+                String newpasswagain =   newPasswordAgain.getText().toString();
 
                 if(TextUtils.isEmpty(email)){
 
@@ -63,13 +63,6 @@ public class NewPasswordActivity extends AppCompatActivity {
                     startActivity(intent);
 
                 }
-
-
-
-
-
-
-
             }
         });
 
