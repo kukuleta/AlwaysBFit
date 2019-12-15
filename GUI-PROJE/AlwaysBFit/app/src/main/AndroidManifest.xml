@@ -9,11 +9,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".Gain_muscles_tabbed"
-            android:label="@string/title_activity_gain_muscles_tabbed"
-            android:exported="true"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name=".ChooseProgramActivity" />
         <activity
             android:name=".Lose_weights_tabbed"
@@ -31,6 +26,7 @@
             android:label="Register"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".MainActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

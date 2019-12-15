@@ -4,9 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
+
+import org.w3c.dom.Text;
 
 public class SignUpActivity extends AppCompatActivity {
 
@@ -23,12 +27,11 @@ public class SignUpActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sign_up);
-
         fullname     = findViewById(R.id.fullName);
         username     = findViewById(R.id.username);
         email        = findViewById(R.id.email);
         password     = findViewById(R.id.password);
-        phone_number = findViewById(R.id.phoneNumber);
+        phone_number = findViewById(R.id.phone);
         height       = findViewById(R.id.height);
         weight       = findViewById(R.id.weight);
         register     = findViewById(R.id.register_button);
@@ -38,12 +41,47 @@ public class SignUpActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(SignUpActivity.this,MainActivity.class);
-                startActivity(intent);
+
+
+                String fullnamee = fullname.getText().toString();
+                String userName  = username.getText().toString();
+                String eMail     = email.getText().toString();
+                String passw     = password.getText().toString();
+                String phoneN    = phone_number.getText().toString();
+                String heightt   = height.getText().toString();
+                String weightt   = weight.getText().toString();
+
+                String[] inputs = {fullnamee,userName,eMail,passw,phoneN,heightt,weightt};
+
+                for(int i=0;i<inputs.length;i++){
+
+                    if(TextUtils.isEmpty(inputs[i])){
+
+                        Toast.makeText(SignUpActivity.this, "Lütfen boş alan bırakmayınız..!", Toast.LENGTH_SHORT).show();
+                        return;
+
+                    }
+
+                    else{
+
+                        goLoginPage();
+                    }
+
+                }
+
 
 
             }
         });
+
+
+    }
+
+
+    public void goLoginPage(){
+
+                Intent intent = new Intent(SignUpActivity.this,MainActivity.class);
+                startActivity(intent);
 
     }
 }
