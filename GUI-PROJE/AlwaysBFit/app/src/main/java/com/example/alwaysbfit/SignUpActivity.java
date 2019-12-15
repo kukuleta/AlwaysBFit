@@ -1,5 +1,6 @@
 package com.example.alwaysbfit;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -10,10 +11,16 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+
 import org.w3c.dom.Text;
 
 public class SignUpActivity extends AppCompatActivity {
 
+    private FirebaseAuth fAuth;
     EditText fullname;
     EditText username;
     EditText email;
@@ -27,6 +34,7 @@ public class SignUpActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sign_up);
+        fAuth = FirebaseAuth.getInstance();
         fullname     = findViewById(R.id.fullName);
         username     = findViewById(R.id.username);
         email        = findViewById(R.id.email);
@@ -41,8 +49,6 @@ public class SignUpActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-
-
                 String fullnamee = fullname.getText().toString();
                 String userName  = username.getText().toString();
                 String eMail     = email.getText().toString();
@@ -53,24 +59,26 @@ public class SignUpActivity extends AppCompatActivity {
 
                 String[] inputs = {fullnamee,userName,eMail,passw,phoneN,heightt,weightt};
 
-                for(int i=0;i<inputs.length;i++){
+                for(int i=0;i<inputs.length;i++) {
 
-                    if(TextUtils.isEmpty(inputs[i])){
+                    if (TextUtils.isEmpty(inputs[i])) {
 
                         Toast.makeText(SignUpActivity.this, "Lütfen boş alan bırakmayınız..!", Toast.LENGTH_SHORT).show();
                         return;
 
                     }
-
-                    else{
-
-                        goLoginPage();
-                    }
-
+                    fAuth.createUserWithEmailAndPassword(eMail, passw)
+                            .addOnCompleteListener(SignUpActivity.this, new OnCompleteListener<AuthResult>() {
+                                @Override
+                                public void onComplete(@NonNull Task<AuthResult> task) {
+                                    if (!task.isSuccessful()) {
+                                        Toast.makeText(SignUpActivity.this, "Non-valid credentials", Toast.LENGTH_SHORT).show();
+                                    } else {
+                                        goLoginPage();
+                                    }
+                                }
+                            });
                 }
-
-
-
             }
         });
 

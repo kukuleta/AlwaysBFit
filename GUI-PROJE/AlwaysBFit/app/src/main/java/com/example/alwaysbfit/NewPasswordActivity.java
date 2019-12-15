@@ -11,9 +11,12 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class NewPasswordActivity extends AppCompatActivity {
 
-    EditText phoneNumber;
+    private FirebaseAuth fAuth;
+    EditText email_adress;
     EditText newPassword;
     EditText newPasswordAgain;
     Button   done_button;
@@ -23,14 +26,14 @@ public class NewPasswordActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.new_password);
-
+        fAuth = FirebaseAuth.getInstance();
         find_view_by_id();
         goLoginPage();
     }
 
     public void find_view_by_id(){
 
-        phoneNumber      = findViewById(R.id.phoneNumber);
+        email_adress      = findViewById(R.id.email);
         newPassword      = findViewById(R.id.newPassword);
         newPasswordAgain = findViewById(R.id.new_password_again);
         done_button      = findViewById(R.id.doneButton);
@@ -44,11 +47,11 @@ public class NewPasswordActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                String phoneNo     = phoneNumber.getText().toString();
+                String email     = email_adress.getText().toString();
                 String newpassw    = newPassword.getText().toString();
                 String newpasswagain = newPasswordAgain.getText().toString();
 
-                if(TextUtils.isEmpty(phoneNo)){
+                if(TextUtils.isEmpty(email)){
 
                     Toast.makeText(NewPasswordActivity.this, "Şifreniz 8 karakter veya üstü olmalı..!", Toast.LENGTH_SHORT).show();
 
