@@ -30,31 +30,29 @@ public class SignUpActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sign_up);
         fAuth = FirebaseAuth.getInstance();
-        email        = findViewById(R.id.email);
-        password     = findViewById(R.id.password);
+        email   = findViewById(R.id.email);
+        password  = findViewById(R.id.password);
 
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                String email     = email.getText().toString().trim();
-                String password     = password.getText().toString();
+                String email_adress     = email.getText().toString().trim();
+                String account_password     = password.getText().toString();
 
-                if (isValidEmail(email))
+                if (isValidEmail(email_adress))
                 {
-                    fAuth.createUserWithEmailAndPassword(email, password)
+                    fAuth.createUserWithEmailAndPassword(email_adress, account_password)
                             .addOnCompleteListener(SignUpActivity.this, new OnCompleteListener<AuthResult>() {
                                 @Override
                                 public void onComplete(@NonNull Task<AuthResult> task) {
                                     if (!task.isSuccessful()) {
                                         Toast.makeText(SignUpActivity.this, "Non-valid credentials", Toast.LENGTH_SHORT).show();
                                     } else {
-                                            Intent intent = new Intent(SignUpActivity.this,MainActivity.class);
-                                            startActivity(intent);
-                                        }
+                                        Intent intent = new Intent(SignUpActivity.this, MainActivity.class);
+                                        startActivity(intent);
                                     }
-                                }
-                            });
+                                }});
                 }
                   else{
                 Toast.makeText(SignUpActivity.this, "Non-valid email", Toast.LENGTH_SHORT).show();
@@ -62,5 +60,39 @@ public class SignUpActivity extends AppCompatActivity {
 
             }
         });
+    }
+
+    /*Checks if given email is valid or not according to criteria.
+     * Criteria : E-Mail can be made up of lowercase,uppercase,digits and followed by the sign @ and domain adress.
+     * Input: String: i.e ismaildenizli@posta.mu.edu.tr
+     * Output: Boolean: Validity of e-mail adress.
+     * */
+    public boolean isValidEmail(String email){
+        String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
+        return (email.matches(emailPattern));
+    }
+
+    /*Checks if given input is valid or not according to criteria.
+     * Criteria : User should provide a input rather than empty value.
+     * Input: String: Username : kukuleta
+     * Output: Boolean: Validity of input.
+     * */
+    public boolean isEntryEmpty(String input)
+    {
+        if(input==""){
+            return true;
+        }
+        return false;
+    }
+
+    /*Checks if given input is valid or not according to criteria.
+     * Criteria : Password should contain at least one uppercase letter,lowercase letter and digit. It also have to consist of at least eight characters.
+     * Input: String: Username : oguzhanA17
+     * Output: Boolean: Validity of input.
+     * */
+    public boolean is_password_valid(String password)
+    {
+        String password_pattern = "(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?<=.{8,})";
+        return (password.matches(password_pattern));
     }
 }

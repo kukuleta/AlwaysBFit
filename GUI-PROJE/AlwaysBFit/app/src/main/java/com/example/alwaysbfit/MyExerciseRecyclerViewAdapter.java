@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.alwaysbfit.ExerciseFragment.OnListFragmentInteractionListener;
-import com.example.alwaysbfit.dummy.DummyContent.DummyItem;
+//import com.example.alwaysbfit.dummy.DummyContent.DummyItem;
 
 import java.util.List;
 
