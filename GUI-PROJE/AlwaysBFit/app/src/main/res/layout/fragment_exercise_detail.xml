@@ -28,7 +28,6 @@
         android:layout_width="312dp"
         android:layout_height="304dp"
         android:layout_marginBottom="4dp"
-        android:fontFamily="@font/aldrich"
         android:text="TextView"
         android:textIsSelectable="false"
         android:textSize="20dp"

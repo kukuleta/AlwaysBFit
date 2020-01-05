@@ -1,5 +1,6 @@
 package com.example.alwaysbfit;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -8,12 +9,18 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 public class ChooseProgramActivity extends AppCompatActivity {
 
+    private FirebaseAuth fauth;
+    private FirebaseAuth.AuthStateListener authstate;
     TextView welcoming;
     Button lose_weights;
     Button gain_muscles;
     Button cardio;
+    Button sign_out_button;
 
 
 
@@ -28,6 +35,23 @@ public class ChooseProgramActivity extends AppCompatActivity {
         goLoseWeightsPage();
         goGainMusclesPage();
         goCardioPage();
+        fauth = FirebaseAuth.getInstance();
+        authstate = new FirebaseAuth.AuthStateListener() {
+            @Override
+            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+
+                FirebaseUser user = firebaseAuth.getCurrentUser();
+
+                if(user==null){
+
+                    startActivity(new Intent(ChooseProgramActivity.this,MainActivity.class));
+                    finish();
+
+
+                }
+            }
+
+        };
 
     }
 
@@ -38,6 +62,7 @@ public class ChooseProgramActivity extends AppCompatActivity {
         gain_muscles = findViewById(R.id.gain_muscles_button);
         cardio       = findViewById(R.id.cardio_button);
         welcoming    = findViewById(R.id.welcoming);
+        sign_out_button = findViewById(R.id.signOut);
 
     }
 

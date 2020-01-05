@@ -21,8 +21,8 @@ import org.w3c.dom.Text;
 public class SignUpActivity extends AppCompatActivity {
 
     private FirebaseAuth fAuth;
-    EditText email;
-    EditText password;
+    EditText Email;
+    EditText Password;
     Button   register;
 
     @Override
@@ -30,15 +30,15 @@ public class SignUpActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sign_up);
         fAuth = FirebaseAuth.getInstance();
-        email        = findViewById(R.id.email);
-        password     = findViewById(R.id.password);
+        Email        = findViewById(R.id.email);
+        Password     = findViewById(R.id.password);
 
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                String email     = email.getText().toString().trim();
-                String password     = password.getText().toString();
+                String email     = Email.getText().toString().trim();
+                String password     = Password.getText().toString();
 
                 if (isValidEmail(email))
                 {
@@ -53,7 +53,7 @@ public class SignUpActivity extends AppCompatActivity {
                                             startActivity(intent);
                                         }
                                     }
-                                }
+
                             });
                 }
                   else{
