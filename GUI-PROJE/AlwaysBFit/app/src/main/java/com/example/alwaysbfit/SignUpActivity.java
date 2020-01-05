@@ -21,8 +21,8 @@ import org.w3c.dom.Text;
 public class SignUpActivity extends AppCompatActivity {
 
     private FirebaseAuth fAuth;
-    EditText email;
-    EditText password;
+    EditText Email;
+    EditText Password;
     Button   register;
 
     @Override
@@ -30,19 +30,18 @@ public class SignUpActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sign_up);
         fAuth = FirebaseAuth.getInstance();
-        email   = findViewById(R.id.email);
-        password  = findViewById(R.id.password);
-
+        Email        = findViewById(R.id.email);
+        Password     = findViewById(R.id.password);
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                String email_adress     = email.getText().toString().trim();
-                String account_password     = password.getText().toString();
+                String email     = Email.getText().toString().trim();
+                String password     = Password.getText().toString();
 
-                if (isValidEmail(email_adress))
+                if (isValidEmail(email))
                 {
-                    fAuth.createUserWithEmailAndPassword(email_adress, account_password)
+                    fAuth.createUserWithEmailAndPassword(email, password)
                             .addOnCompleteListener(SignUpActivity.this, new OnCompleteListener<AuthResult>() {
                                 @Override
                                 public void onComplete(@NonNull Task<AuthResult> task) {
