@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient">
+
+    <ScrollView
+        android:id="@+id/loseweights_scroll1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/gain_strength_medicine_ball_clean_img"
+                android:layout_width="135dp"
+                android:layout_height="139dp"
+                app:srcCompat="@drawable/medicine_ball_clean"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/gain_strength_sumo_deadlift_high_pull_img"/>
+
+            <TextView
+                android:id="@+id/gain_strength_medicine_ball_clean_text"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:inputType="textMultiLine"
+                android:text="  Medicine Ball Clean \n  - 12 Repeats \n  - 4 Sets"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#FCE7E7"
+                android:textSize="21sp"
+                app:layout_constraintStart_toEndOf="@id/gain_strength_medicine_ball_clean_img"
+                app:layout_constraintTop_toTopOf="@id/gain_strength_medicine_ball_clean_img" />
+
+            <ImageView
+                android:id="@+id/gain_strength_sumo_deadlift_high_pull_img"
+                android:layout_width="135dp"
+                android:layout_height="139dp"
+                app:srcCompat="@drawable/sumo_deadlift_high_pull"
+                app:layout_constraintTop_toBottomOf="@id/gain_strength_deadlift_img"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/gain_strength_sumo_deadlift_high_pull_text"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:inputType="textMultiLine"
+                android:text="  Sumo Deadlift High\n  Pull \n  - 12 Repeats \n  - 4 Sets"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#FCE7E7"
+                android:textSize="21sp"
+                app:layout_constraintStart_toEndOf="@id/gain_strength_sumo_deadlift_high_pull_img"
+                app:layout_constraintTop_toTopOf="@id/gain_strength_sumo_deadlift_high_pull_img" />
+
+            <ImageView
+                android:id="@+id/gain_strength_deadlift_img"
+                android:layout_width="135dp"
+                android:layout_height="139dp"
+                app:srcCompat="@drawable/deadlift"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/gain_strength_push_jerk_img"/>
+
+            <TextView
+                android:id="@+id/gain_strength_deadlift_text"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:inputType="textMultiLine"
+                android:text="  Deadlift \n  - 12 Repeats \n  - 4 Sets"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#FCE7E7"
+                android:textSize="21sp"
+                app:layout_constraintStart_toEndOf="@id/gain_strength_deadlift_img"
+                app:layout_constraintTop_toTopOf="@id/gain_strength_deadlift_img" />
+
+            <ImageView
+                android:id="@+id/gain_strength_push_jerk_img"
+                android:layout_width="135dp"
+                android:layout_height="139dp"
+                app:srcCompat="@drawable/push_jerk"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/gain_strength_push_press_img"/>
+
+            <TextView
+                android:id="@+id/gain_strength_push_jerk_text"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:inputType="textMultiLine"
+                android:text="  Push Jerk \n  - 12 Repeats \n  - 4 Sets"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#FCE7E7"
+                android:textSize="21sp"
+                app:layout_constraintStart_toEndOf="@id/gain_strength_push_jerk_img"
+                app:layout_constraintTop_toTopOf="@id/gain_strength_push_jerk_img" />
+
+            <ImageView
+                android:id="@+id/gain_strength_push_press_img"
+                android:layout_width="135dp"
+                android:layout_height="139dp"
+                app:srcCompat="@drawable/push_press"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/gain_strength_deltoid_dumbell_press_img"/>
+
+            <TextView
+                android:id="@+id/gain_strength_push_press_text"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:inputType="textMultiLine"
+                android:text="  Push Press \n  - 12 Repeats \n  - 4 Sets"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#FCE7E7"
+                android:textSize="21sp"
+                app:layout_constraintStart_toEndOf="@id/gain_strength_push_press_img"
+                app:layout_constraintTop_toTopOf="@id/gain_strength_push_press_img" />
+
+
+            <ImageView
+                android:id="@+id/gain_strength_deltoid_dumbell_press_img"
+                android:layout_width="135dp"
+                android:layout_height="139dp"
+                app:srcCompat="@drawable/deltoid_dumbell_press"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/gain_strength_overhead_squat_img"/>
+
+            <TextView
+                android:id="@+id/gain_strength_deltoid_dumbell_press_text"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:inputType="textMultiLine"
+                android:text="  Deltoid Dumbell Press \n  - 12 Repeats \n  - 4 Sets"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#FCE7E7"
+                android:textSize="21sp"
+                app:layout_constraintStart_toEndOf="@id/gain_strength_deltoid_dumbell_press_img"
+                app:layout_constraintTop_toTopOf="@id/gain_strength_deltoid_dumbell_press_img" />
+
+            <ImageView
+                android:id="@+id/gain_strength_overhead_squat_img"
+                android:layout_width="135dp"
+                android:layout_height="139dp"
+                app:srcCompat="@drawable/overhead_squat"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/gain_strength_front_squat_img"/>
+
+            <TextView
+                android:id="@+id/gain_strength_overhead_squat_text"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:inputType="textMultiLine"
+                android:text="  Overhead Squat \n  - 12 Repeats \n  - 4 Sets"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#FCE7E7"
+                android:textSize="21sp"
+                app:layout_constraintStart_toEndOf="@id/gain_strength_overhead_squat_img"
+                app:layout_constraintTop_toTopOf="@id/gain_strength_overhead_squat_img" />
+
+            <ImageView
+                android:id="@+id/gain_strength_front_squat_img"
+                android:layout_width="135dp"
+                android:layout_height="139dp"
+                app:srcCompat="@drawable/front_squat"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/gain_strength_air_squat_img"/>
+
+            <TextView
+                android:id="@+id/gain_strength_front_squat_text"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:inputType="textMultiLine"
+                android:text="  Front Squat \n  - 12 Repeats \n  - 4 Sets"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#FCE7E7"
+                android:textSize="21sp"
+                app:layout_constraintStart_toEndOf="@id/gain_strength_front_squat_img"
+                app:layout_constraintTop_toTopOf="@id/gain_strength_front_squat_img" />
+
+            <ImageView
+                android:id="@+id/gain_strength_air_squat_img"
+                android:layout_width="135dp"
+                android:layout_height="139dp"
+                app:srcCompat="@drawable/air_squat"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/gain_strength_air_squat_text"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:inputType="textMultiLine"
+                android:text="  Air Squat \n  - 12 Repeats \n  - 4 Sets"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#FCE7E7"
+                android:textSize="21sp"
+                app:layout_constraintStart_toEndOf="@id/gain_strength_air_squat_img"
+                app:layout_constraintTop_toTopOf="@id/gain_strength_air_squat_img" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AlwaysBFit</string>
+    <string name="title_activity_lose_weight_activity">lose_weight_activity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="title_activity_lose_weights_tabbed">lose_weights_tabbed</string>
+    <string name="title_activity_lose_weights_tab1">Lose_weights_tab1</string>
+    <string name="title_activity_gain_muscles_tabbed">Gain_muscles_tabbed</string>
+    <string name="title_activity_gain__strength_tabbed">Gain_Strength_tabbed</string>
+</resources>

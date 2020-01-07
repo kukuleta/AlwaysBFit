@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/gain_muscles_leg_raise2_img"
+                android:layout_width="135dp"
+                android:layout_height="139dp"
+                app:srcCompat="@drawable/leg_raise"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/gain_muscles_plank2_img"/>
+
+            <TextView
+                android:id="@+id/gain_muscles_leg_raise2_text"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:inputType="textMultiLine"
+                android:text=" Leg Raise \n  - 15 Repeats \n  - 3 Sets"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#FCE7E7"
+                android:textSize="21sp"
+                app:layout_constraintStart_toEndOf="@id/gain_muscles_leg_raise2_img"
+                app:layout_constraintTop_toTopOf="@id/gain_muscles_leg_raise2_img" />
+
+            <ImageView
+                android:id="@+id/gain_muscles_plank2_img"
+                android:layout_width="135dp"
+                android:layout_height="139dp"
+                app:srcCompat="@drawable/plank"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/gain_muscles_crunch2_img"/>
+
+            <TextView
+                android:id="@+id/gain_muscles_plank2_text"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:inputType="textMultiLine"
+                android:text=" Plank \n  - 30 Seconds \n  - 3 Sets"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#FCE7E7"
+                android:textSize="21sp"
+                app:layout_constraintStart_toEndOf="@id/gain_muscles_plank2_img"
+                app:layout_constraintTop_toTopOf="@id/gain_muscles_plank2_img" />
+
+            <ImageView
+                android:id="@+id/gain_muscles_crunch2_img"
+                android:layout_width="135dp"
+                android:layout_height="139dp"
+                app:srcCompat="@drawable/crunch"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/gain_muscles_skull_crushers_img"/>
+
+            <TextView
+                android:id="@+id/gain_muscles_crunch2_text"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:inputType="textMultiLine"
+                android:text=" Crunch \n  - 15 Repeats \n  - 3 Sets"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#FCE7E7"
+                android:textSize="21sp"
+                app:layout_constraintStart_toEndOf="@id/gain_muscles_crunch2_img"
+                app:layout_constraintTop_toTopOf="@id/gain_muscles_crunch2_img" />
+
+            <ImageView
+                android:id="@+id/gain_muscles_skull_crushers_img"
+                android:layout_width="135dp"
+                android:layout_height="139dp"
+                app:srcCompat="@drawable/skull_crushers"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/gain_muscles_close_grip_bench_press_img"/>
+
+            <TextView
+                android:id="@+id/gain_muscles_skull_crushers_text"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:inputType="textMultiLine"
+                android:text=" Skull Crushers \n  - 12 Repeats \n  - 4 Sets"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#FCE7E7"
+                android:textSize="21sp"
+                app:layout_constraintStart_toEndOf="@id/gain_muscles_skull_crushers_img"
+                app:layout_constraintTop_toTopOf="@id/gain_muscles_skull_crushers_img" />
+
+
+            <ImageView
+                android:id="@+id/gain_muscles_close_grip_bench_press_img"
+                android:layout_width="135dp"
+                android:layout_height="139dp"
+                app:srcCompat="@drawable/close_grip_bench_press"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/gain_muscles_cable_pushdowm_img"/>
+
+            <TextView
+                android:id="@+id/gain_muscles_close_grip_bench_press_text"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:inputType="textMultiLine"
+                android:text=" Close Grip\n  Bench Press \n  - 12 Repeats \n  - 4 Sets"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#FCE7E7"
+                android:textSize="21sp"
+                app:layout_constraintStart_toEndOf="@id/gain_muscles_close_grip_bench_press_img"
+                app:layout_constraintTop_toTopOf="@id/gain_muscles_close_grip_bench_press_img" />
+
+            <ImageView
+                android:id="@+id/gain_muscles_cable_pushdowm_img"
+                android:layout_width="135dp"
+                android:layout_height="139dp"
+                app:srcCompat="@drawable/cable_pushdown"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/gain_muscles_bent_over_row_img"/>
+
+            <TextView
+                android:id="@+id/gain_muscles_cable_pushdown_text"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:inputType="textMultiLine"
+                android:text=" Cable Pushdown \n  - 12 Repeats \n  - 4 Sets"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#FCE7E7"
+                android:textSize="21sp"
+                app:layout_constraintStart_toEndOf="@id/gain_muscles_cable_pushdowm_img"
+                app:layout_constraintTop_toTopOf="@id/gain_muscles_cable_pushdowm_img" />
+
+            <ImageView
+                android:id="@+id/gain_muscles_bent_over_row_img"
+                android:layout_width="135dp"
+                android:layout_height="139dp"
+                app:srcCompat="@drawable/bent_over_row"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/gain_muscles_dumbell_row_img"/>
+
+            <TextView
+                android:id="@+id/gain_muscles_bent_over_row_text"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:inputType="textMultiLine"
+                android:text=" Bent Over Row \n  - 12 Repeats \n  - 4 Sets"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#FCE7E7"
+                android:textSize="21sp"
+                app:layout_constraintStart_toEndOf="@id/gain_muscles_bent_over_row_img"
+                app:layout_constraintTop_toTopOf="@id/gain_muscles_bent_over_row_img" />
+
+            <ImageView
+                android:id="@+id/gain_muscles_dumbell_row_img"
+                android:layout_width="135dp"
+                android:layout_height="139dp"
+                app:srcCompat="@drawable/dumbell_row"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/gain_muscles_seated_cable_row_img"/>
+
+            <TextView
+                android:id="@+id/gain_muscles_dumbell_row_text"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:inputType="textMultiLine"
+                android:text=" Dumbell Row \n  - 12 Repeats \n  - 4 Sets"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#FCE7E7"
+                android:textSize="21sp"
+                app:layout_constraintStart_toEndOf="@id/gain_muscles_dumbell_row_img"
+                app:layout_constraintTop_toTopOf="@id/gain_muscles_dumbell_row_img" />
+
+            <ImageView
+                android:id="@+id/gain_muscles_seated_cable_row_img"
+                android:layout_width="135dp"
+                android:layout_height="139dp"
+                app:srcCompat="@drawable/seated_cable_row"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/gain_muscles_pulldown_img"/>
+
+            <TextView
+                android:id="@+id/gain_muscles_seated_cable_row_text"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:inputType="textMultiLine"
+                android:text=" Seated Cable Row \n  - 12 Repeats \n  - 4 Sets"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#FCE7E7"
+                android:textSize="21sp"
+                app:layout_constraintStart_toEndOf="@id/gain_muscles_seated_cable_row_img"
+                app:layout_constraintTop_toTopOf="@id/gain_muscles_seated_cable_row_img" />
+
+            <ImageView
+                android:id="@+id/gain_muscles_pulldown_img"
+                android:layout_width="135dp"
+                android:layout_height="139dp"
+                app:srcCompat="@drawable/pull_down"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/gain_muscles_pulldown_text"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:inputType="textMultiLine"
+                android:text=" Pull Down \n  - 12 Repeats \n  - 4 Sets"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#FCE7E7"
+                android:textSize="21sp"
+                app:layout_constraintStart_toEndOf="@id/gain_muscles_pulldown_img"
+                app:layout_constraintTop_toTopOf="@id/gain_muscles_pulldown_img" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>
